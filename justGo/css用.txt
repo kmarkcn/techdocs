@@ -1,0 +1,96 @@
+HTMT5语义化
+http://www.html5jscss.com/html5-semantics-section.html
+HTML5,CSS3精彩的事例
+http://www.cnblogs.com/lhb25/p/10-useful-web-effect.html
+
+html规范：http://codeguide.bootcss.com/
+
+W3C规范:结构标准语言(可扩展标记语言XML),表现标准语言(层叠样式表CSS),行为标准(文档对象模型DOM)
+
+先输入/r+空格
+
+
+LZP3580485
+3580485
+
+ -webkit- -o- -moz- -ms- 分别给 谷歌 苹果 opera 火狐 ie10 用的
+
+cursor: pointer; 		鼠标变手型
+letter-spacing:2px; 		字间距2像素 
+text-decoration:underline  	a标签拥有下划线
+list-style-type:disc;		列表拥有序号
+text-indent:2em;		首行缩进2个字符	
+opacity: 0.5;			透明度一半
+-moz-box-sizing:border-box;  /*适应火狐浏览器*/	-webkit-box-sizing:border-box; /*适应谷歌浏览器*/	box-sizing:border-box; /*盒子大小包括边框且padding不影响盒子大小*/	
+
+display:table-cell; vertical-align:middle; text-align:center;	DIV内容居中表格化后百分比无用
+width: 0; height: 0;border-left: 10px solid transparent;border-right: 10px solid transparent; border-bottom: 10px solid black; 向上的红三角形
+<abbr title="HyperText Markup Language" class="initialism">HTML</abbr>	缩略语句
+<blockquote> 与 </blockquote> 之间的所有文本都会从常规文本中分离出来，经常会在左、右两边进行缩进
+			（增加外边距），而且有时会使用斜体。也就是说，块引用拥有它们自己的空间。
+
+1.完全匹配属性选择器     [id=article]{color:red;}		IE7+
+2.包含匹配选择器		其语法是：[attribute*=value]。		IE7+
+3.首字符匹配选择器	其语法是：[attribute^=value]。		IE7+	
+4.尾字符匹配选择器	其语法是：[attribute$=value]。		IE7+
+
+before	#tab2:before{}	IE8+ 注IE8.IE9对属性内容的支持存在问题
+after	#tab2:after{}	IE8+ 注IE8.IE9对属性内容的支持存在问题
+指定第2个li元素	 li:nth-child(2) IE7+
+指定偶数个li元素	 li:nth-child(even){}
+指定倒数第2个li元素 li:nth-last-child{}
+box-shadow:5px -5px 3px red;	IE9+	
+第一个length 值是阴影水平偏移值；第二个length 值是阴影垂直偏移值；第三个length 值是阴影模糊值。
+text-shadow:5px -10px 5px red;	IE11+ 注和书上存在差距 书上写的是IE8+
+背景图像的大小 background-size:50px 50px; IE9+ 
+-webkit-background-origin:content;	只兼容谷歌浏览器并且必须写-webkit- 注3个值:border,padding,content;
+设置多张背景图片  background:url(background1.png) left top no-repeat,url(background2.png) left top no-repeat; IE9+
+线性渐变linear或径向渐变radial 注:火狐谷歌,IE可以写,但是很复杂
+background:-webkit-gradient(linear, 0 0, 0 100%, from(#2074af), to(#2c91d2));
+	  background:-moz-linear-gradient(top, #FFC3C8,#FF9298);
+圆角border-radius:10px 5px 5px 5px; IE9+
+宽度变化在2秒内完成 transition:width 2s; 若要宽度和高度一起变化则把width换成all  IE11+ 
+
+
+28
+
+该代码的主要作用是自定义虚拟窗口 viewport
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0" />
+
+
+<link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 900px)" href="css/cs2_middle.css"/>
+<link rel="stylesheet" media="screen and (max-width: 600px)" href="css/cs2_small.css"/>
+响应式布局
+http://www.cnblogs.com/mofish/archive/2012/05/23/2515218.html
+
+@media [media_query] media_type and media_feature
+media_query 表示查询关键字，在这里可以使用not 关键字和only 关键字
+media_type 参数的作用是指定设备类型，通常称为媒体类型。
+media_feature 的主要作用是定义CSS 中的设备特性，大部分移动设备特性都允许接受min/max 的前缀。
+
+
+手机端的图片处理需要使用"点九"的制图方法;
+手机屏幕分辨率规格尺寸
+http://www.360doc.com/content/11/1107/15/8000522_162505925.shtml
+240*320
+320*480
+苹果手机分辨率尺寸 320*480
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
